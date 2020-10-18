@@ -4,6 +4,11 @@
           fetch="https://github.com/caf-ginkgo"
           revision="11.0"/>
 
+  <remote name="aosp"
+          fetch="https://android.googlesource.com"
+          review="https://android-review.googlesource.com/"
+          revision="refs/tags/android-11.0.0_r8"/>
+
   <remove-project name="device/qcom/common" />
   <remove-project name="device/qcom/qssi" />
   <remove-project name="device/qcom/sepolicy_vndr" />
@@ -14,6 +19,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/arm-optimized-routines" />
+  <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/zlib" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
@@ -61,6 +67,7 @@
   <project path="device/qcom/wlan" name="device_qcom_wlan" remote="ginkgo" />
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ginkgo" />
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ginkgo" />
+  <project path="external/libhevc" name="platform/external/libhevc" remote="aosp" />
   <project path="external/google-fonts/google-sans" name="external_google-fonts_google-sans" remote="ginkgo" />
   <project path="external/zlib" name="external_zlib" remote="ginkgo" />
   <project path="frameworks/base" name="frameworks_base" remote="ginkgo" />
