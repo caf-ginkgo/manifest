@@ -45,6 +45,8 @@
   <remove-project name="platform/vendor/qcom-opensource/power" />
   <remove-project name="platform/vendor/qcom/wlan" />
 
+  <project path="manifest" name="manifest" remote="ginkgo" />
+
   <project path="art" name="art" remote="ginkgo" />
   <project path="bionic" name="bionic" remote="ginkgo" />
   <project path="build/make" name="build_make" remote="ginkgo" >
@@ -66,7 +68,7 @@
     <linkfile dest="disregard/Android.mk" src="stop_scan.mk"/>
   </project>
   <project path="device/qcom/qssi" name="device_qcom_qssi" remote="ginkgo" />
-  <project path="device/qcom/sepolicy/vndr" name="device_qcom_sepolicy_vndr" remote="ginkgo" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="ginkgo" />
   <project path="device/qcom/vendor-common" name="device_qcom_vendor-common" remote="ginkgo" />
   <project path="device/qcom/wlan" name="device_qcom_wlan" remote="ginkgo" />
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ginkgo" />
