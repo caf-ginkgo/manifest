@@ -19,6 +19,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/arm-optimized-routines" />
+  <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/zlib" />
   <remove-project name="platform/frameworks/base" />
@@ -67,6 +68,7 @@
   <project path="device/qcom/wlan" name="device_qcom_wlan" remote="ginkgo" />
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ginkgo" />
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ginkgo" />
+  <project path="external/chromium-webview" name="platform/external/chromium-webview" remote="aosp" />
   <project path="external/libhevc" name="platform/external/libhevc" remote="aosp" />
   <project path="external/google-fonts/google-sans" name="external_google-fonts_google-sans" remote="ginkgo" />
   <project path="external/zlib" name="external_zlib" remote="ginkgo" />
