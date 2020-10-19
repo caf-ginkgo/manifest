@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="ginkgo"
+          fetch="https://github.com/caf-ginkgo"
+          revision="11.0"/>
+
+  <remove-project name="device/qcom/common" />
+  <remove-project name="device/qcom/qssi" />
+  <remove-project name="device/qcom/sepolicy_vndr" />
+  <remove-project name="device/qcom/vendor-common" />
+  <remove-project name="kernel/msm-4.14" />
+  <remove-project name="platform/art" />
+  <remove-project name="platform/bionic" />
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <remove-project name="platform/external/zlib" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <remove-project name="platform/packages/apps/SnapdragonCamera" />
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/memory/lmkd" />
+  <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/vendor/nxp/opensource/halimpl" />
+  <remove-project name="platform/vendor/nxp/opensource/packages/apps/Nfc" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <remove-project name="platform/vendor/qcom/wlan" />
+
+  <project path="art" name="art" remote="ginkgo" />
+  <project path="bionic" name="bionic" remote="ginkgo" />
+  <project path="build/make" name="build_make" remote="ginkgo" >
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project path="build/soong" name="build_soong" remote="ginkgo" >
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+  <project path="device/qcom/common" name="device_qcom_common" remote="ginkgo" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk" />
+    <linkfile dest="kernel/Android.mk" src="stop_scan.mk"/>
+    <linkfile dest="disregard/Android.mk" src="stop_scan.mk"/>
+  </project>
+  <project path="device/qcom/qssi" name="device_qcom_qssi" remote="ginkgo" />
+  <project path="device/qcom/sepolicy/vndr" name="device_qcom_sepolicy_vndr" remote="ginkgo" />
+  <project path="device/qcom/vendor-common" name="device_qcom_vendor-common" remote="ginkgo" />
+  <project path="device/qcom/wlan" name="device_qcom_wlan" remote="ginkgo" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ginkgo" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ginkgo" />
+  <project path="external/google-fonts/google-sans" name="external_google-fonts_google-sans" remote="ginkgo" />
+  <project path="external/zlib" name="external_zlib" remote="ginkgo" />
+  <project path="frameworks/base" name="frameworks_base" remote="ginkgo" />
+  <project path="frameworks/native" name="frameworks_native" remote="ginkgo" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="ginkgo" >
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
+  </project>
+  <project path="hardware/qcom/media" name="hardware_qcom_media" remote="ginkgo" >
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video-product.mk" src="product.mk"/>
+  </project>
+  <project path="kernel/msm-4.14" name="kernel_msm-4.14" remote="ginkgo" >
+    <linkfile dest="kernel/msm-4.14/Android.bp" src="Androidbp"/>
+  </project>
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ginkgo" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ginkgo" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ginkgo" />
+  <project path="packages/apps/SnapdragonCamera" name="packages_apps_SnapdragonCamera" remote="ginkgo" />
+  <project path="system/core" name="system_core" remote="ginkgo" />
+  <project path="system/memory/lmkd" name="system_memory_lmkd" remote="ginkgo" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="ginkgo" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="vendor_nxp_opensource_commonsys_packages_apps_Nfc" remote="ginkgo" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/nfc-system-product.mk" src="nfc_system_product.mk"/>
+  </project>
+  <project path="vendor/nxp/opensource/halimpl" name="vendor_nxp_opensource_halimpl" remote="ginkgo" >
+      <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
+  </project>
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" remote="ginkgo" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_commonsys-intf_bluetooth" remote="ginkgo" >
+    <linkfile dest="vendor/qcom/defs/board-defs/system/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/system/bt-system-opensource-product.mk" src="bt-system-opensource-product.mk"/>
+  </project>
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="ginkgo" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
+  </project>
+  <project path="vendor/qcom/opensource/core-utils" name="vendor_qcom_opensource_core-utils" remote="ginkgo" >
+    <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk"/>
+    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
+    <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk"/>
+    <linkfile dest="vendor/qcom/build/tasks/generate_vendor_bundle.mk" src="image_generation_tool/generate_vendor_bundle.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/image_generation_tool_product.mk" src="image_generation_tool/config/image_generation_tool_product.mk"/>
+    <linkfile dest="build.sh" src="build/build.sh"/>
+    <linkfile dest="kernel/Android.mk" src="build/stop_scan.mk"/>
+    <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk"/>
+  </project>
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ginkgo" />
+
+</manifest>

@@ -761,4 +761,5 @@
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="toolchain/pgo-profiles" revision="86a42a8fb2e188cc840cd4a34c123706caa44d6c" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="tools/platform-compat" revision="795503b5673c6ee91ace7c19747fda77efa27a13" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <include name="trinket.xml"/>
+  <include name="ginkgo.xml"/>
 </manifest>
