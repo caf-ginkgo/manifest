@@ -32,6 +32,7 @@
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/SnapdragonMusic" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/apps/SnapdragonCamera" />
   <remove-project name="platform/system/core" />
@@ -42,6 +43,7 @@
   <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
   <remove-project name="platform/vendor/qcom-opensource/core-utils" />
   <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
   <remove-project name="platform/vendor/qcom-opensource/power" />
   <remove-project name="platform/vendor/qcom/wlan" />
 
@@ -96,6 +98,9 @@
   <project path="system/core" name="system_core" remote="ginkgo" />
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="ginkgo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="ginkgo" />
+  <project path="vendor/codeaurora/commonsys/packages/apps/SnapdragonMusic" name="vendor_codeaurora_commonsys_packages_apps_SnapdragonMusic" remote="ginkgo" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapMusic_product.mk" src="app_snapMusic_system_product.mk"/>
+  </project>
   <project path="vendor/google/gms" name="ghostrider-reborn/vendor_google_gms" remote="gitlab" revision="11.0" />
   <project path="vendor/google/pixel" name="ghostrider-reborn/vendor_google_pixel" remote="gitlab" revision="11.0" />
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="vendor_nxp_opensource_commonsys_packages_apps_Nfc" remote="ginkgo" >
@@ -105,6 +110,7 @@
       <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
   </project>
   <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" remote="ginkgo" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="vendor_qcom_opensource_commonsys_fm" remote="ginkgo" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_commonsys-intf_bluetooth" remote="ginkgo" >
     <linkfile dest="vendor/qcom/defs/board-defs/system/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
