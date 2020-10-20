@@ -35,6 +35,7 @@
   <remove-project name="platform/packages/apps/SnapdragonMusic" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/apps/SnapdragonCamera" />
+  <remove-project name="platform/packages/providers/DownloadProvider" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/memory/lmkd" />
   <remove-project name="platform/system/sepolicy" />
@@ -95,6 +96,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ginkgo" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ginkgo" />
   <project path="packages/apps/SnapdragonCamera" name="packages_apps_SnapdragonCamera" remote="ginkgo" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="ginkgo" />
   <project path="system/core" name="system_core" remote="ginkgo" />
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="ginkgo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="ginkgo" />
