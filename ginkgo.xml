@@ -19,6 +19,7 @@
   <remove-project name="kernel/msm-4.14" />
   <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
+  <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/arm-optimized-routines" />
@@ -41,6 +42,7 @@
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/memory/lmkd" />
   <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/vendor/codeaurora/packages/apps/Dialer" />
   <remove-project name="platform/vendor/nxp/opensource/halimpl" />
   <remove-project name="platform/vendor/nxp/opensource/packages/apps/Nfc" />
   <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
@@ -54,6 +56,7 @@
 
   <project path="art" name="art" remote="ginkgo" />
   <project path="bionic" name="bionic" remote="ginkgo" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="ginkgo" />
   <project path="build/make" name="build_make" remote="ginkgo" >
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
@@ -104,6 +107,7 @@
   <project path="system/core" name="system_core" remote="ginkgo" />
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="ginkgo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="ginkgo" />
+  <project path="vendor/codeaurora/commonsys/packages/apps/Dialer" name="vendor_codeaurora_commonsys_packages_apps_Dialer" remote="ginkgo" >
   <project path="vendor/codeaurora/commonsys/packages/apps/SnapdragonMusic" name="vendor_codeaurora_commonsys_packages_apps_SnapdragonMusic" remote="ginkgo" >
     <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapMusic_product.mk" src="app_snapMusic_system_product.mk"/>
   </project>
