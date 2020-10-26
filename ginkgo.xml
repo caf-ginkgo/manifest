@@ -4,6 +4,9 @@
           fetch="https://github.com/caf-ginkgo"
           revision="11.0"/>
 
+  <remote name="github"
+          fetch="https://github.com"/>
+
   <remote name="gitlab"
           fetch="https://gitlab.com"/>
 
@@ -50,6 +53,7 @@
   <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
   <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
   <remove-project name="platform/vendor/qcom-opensource/power" />
+  <remove-project name="platform/vendor/qcom-opensource/usb" />
   <remove-project name="platform/vendor/qcom/wlan" />
 
   <project path="manifest" name="manifest" remote="ginkgo" />
@@ -104,6 +108,7 @@
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ginkgo" />
   <project path="packages/apps/SnapdragonCamera" name="packages_apps_SnapdragonCamera" remote="ginkgo" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="ginkgo" />
+  <project path="prebuilts/clang/host/linux-x86/clang-12.0" name="kdrag0n/proton-clang" remote="github" revision="master" />
   <project path="system/core" name="system_core" remote="ginkgo" />
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="ginkgo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="ginkgo" />
@@ -141,5 +146,8 @@
     <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk"/>
   </project>
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ginkgo" />
+  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="ginkgo" >
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+  </project>
 
 </manifest>
