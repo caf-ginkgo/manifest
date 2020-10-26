@@ -27,6 +27,11 @@
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/arm-optimized-routines" />
   <remove-project name="platform/external/chromium-webview" />
+  <remove-project name="platform/external/google-fonts/barlow" />
+  <remove-project name="platform/external/google-fonts/big-shoulders-text" />
+  <remove-project name="platform/external/google-fonts/fraunces" />
+  <remove-project name="platform/external/google-fonts/karla" />
+  <remove-project name="platform/external/google-fonts/source-sans-pro" />
   <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/scudo" />
   <remove-project name="platform/external/zlib" />
@@ -86,6 +91,11 @@
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ginkgo" />
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ginkgo" />
   <project path="external/chromium-webview" name="platform/external/chromium-webview" remote="aosp" />
+  <project path="external/google-fonts/barlow" name="platform/external/google-fonts/barlow" remote="aosp" />
+  <project path="external/google-fonts/big-shoulders-text" name="platform/external/google-fonts/big-shoulders-text" remote="aosp" />
+  <project path="external/google-fonts/fraunces" name="platform/external/google-fonts/fraunces" remote="aosp" />
+  <project path="external/google-fonts/karla" name="platform/external/google-fonts/karla" remote="aosp" />
+  <project path="external/google-fonts/source-sans-pro" name="platform/external/google-fonts/source-sans-pro" remote="aosp" />
   <project path="external/libhevc" name="platform/external/libhevc" remote="aosp" />
   <project path="external/google-fonts/google-sans" name="external_google-fonts_google-sans" remote="ginkgo" />
   <project path="external/scudo" name="external_scudo" remote="ginkgo" />
