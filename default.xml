@@ -33,10 +33,10 @@
   <project groups="device,dragonboard,pdk,r-fs-release,qc-common-sys" name="device/linaro/dragonboard-kernel" revision="a88867f034172d6f0dd6d32b4a8323b6c5674303" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="device,pdk,poplar,r-fs-release,qc-common-sys" name="device/linaro/poplar" revision="906671d87cc9ab31512805fc7768046503369c37" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="device,pdk,poplar,r-fs-release,qc-common-sys" name="device/linaro/poplar-kernel" revision="2f6bd503cc92d285e51d2aa3c381e562b2f4a63f" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
-  <project groups="qc-common-sys-intf" name="device/qcom/qssi" revision="8a16eb20a548fcebe2ef0b9454abcf8a1282396f" upstream="refs/heads/qcom-qssi.lnx.6.0.r2-rel"/>
-  <project groups="qc-common-sys" name="device/qcom/qssi_32" revision="164696ee043ab3b19af166e1a46913e388935517" upstream="refs/heads/qcom-qssi.lnx.6.0.r2-rel"/>
-  <project groups="qc-common-sys" name="device/qcom/qssi_32go" revision="2488865d75dcb307fc9e6b9fb1a8833a9d4f2a75" upstream="refs/heads/qcom-qssi.lnx.6.0.r2-rel"/>
-  <project groups="qc-common-sys-intf" name="device/qcom/sepolicy" revision="c99609d2e79da111e9651fea98d4e1967984fb0c" upstream="refs/heads/sepolicy.lnx.6.0.r4-rel"/>
+  <project groups="qc-common-sys-intf" name="device/qcom/qssi" revision="571c98088069342578dd2a9bf70a7456d50473e6" upstream="refs/heads/qcom-qssi.lnx.6.0.r2-rel"/>
+  <project groups="qc-common-sys" name="device/qcom/qssi_32" revision="d962f87c0b4fb850743027d274bbd38f8b498acd" upstream="refs/heads/qcom-qssi.lnx.6.0.r2-rel"/>
+  <project groups="qc-common-sys" name="device/qcom/qssi_32go" revision="58b189a14e5aa3b7c572af5d141e4326843ecd75" upstream="refs/heads/qcom-qssi.lnx.6.0.r2-rel"/>
+  <project groups="qc-common-sys-intf" name="device/qcom/sepolicy" revision="2c365d37f64981846f5eb05489c0b4ea4872a0c8" upstream="refs/heads/sepolicy.lnx.6.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="device/sample" revision="bdab79f470a38e0b2f69caa1a9504e0e376b2857" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,vts,qc-common-sys-intf" name="kernel/configs" revision="2d9bd207979430ebb295a2fbc599f4a4d84f7eaf" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys" name="kernel/prebuilts/4.19/arm64" revision="9d42a8e478a73a12184de22d807a43e98ebb77b9" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
@@ -44,7 +44,7 @@
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/art" path="art" revision="112362095c37b1f6f849922ac30345396a6ff3df" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/bionic" path="bionic" revision="af192aebf6d8c2a9bb2a1576779dcb0b48329e3b" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/bootable/recovery" path="bootable/recovery" revision="c015efedd9d5c3a1cadc99d3e07915b7b2d20f28" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
-  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/build" path="build/make" revision="d1b2e54bed2ff6cf18c62f4d426ee58b79e98762" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel">
+  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/build" path="build/make" revision="371f43a68e632faa9d32c04fec8f9e21938157a0" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
@@ -412,7 +412,7 @@
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/external/wayland-protocols" path="external/wayland-protocols" revision="c5327e4c05a9e8832dbecdfb846205195e5530f1" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,qcom_msm8x26,r-fs-release,qc-common-sys-intf" name="platform/external/webp" path="external/webp" revision="b9612ec874d56ac401432fba7e2d866af6fa1022" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/external/webrtc" path="external/webrtc" revision="80f388cc9a3f849b6c5cbb1277b84610aa12fef5" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
-  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="431e012b2eeb865098ca13b350c810cb1db2a4df" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
+  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="1385f15fd34262b1e2d5090e229f6e6a90f59ced" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/external/wycheproof" path="external/wycheproof" revision="cc7457e402efc8eaf389fa05cae65927dae59a44" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/external/xmp_toolkit" path="external/xmp_toolkit" revision="e9ba442a19d8eb4d84d38c023b966745d3df6ad5" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/external/xz-embedded" path="external/xz-embedded" revision="376b3aefa4f9ff028de12ed473d08b6acb18a98e" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
@@ -421,8 +421,8 @@
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/external/zlib" path="external/zlib" revision="e75257e53ebdaf5027f0f43d15c097a8532da056" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/external/zopfli" path="external/zopfli" revision="1ebb510a3cc2283fc282aa4ebf9f521b32c61fcf" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/external/zxing" path="external/zxing" revision="ca46ddb16b366def72de987604acb4bc3660ada2" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
-  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/av" path="frameworks/av" revision="2ec833de1138975adf04bc11e5a5cafab7ba30ab" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
-  <project groups="pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/base" path="frameworks/base" revision="5eb5215e8e20f95078d0ab8f77145ba771963c5f" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
+  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/av" path="frameworks/av" revision="2d556f81a6e8a45ece504e449ad30e8bf8da3115" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/base" path="frameworks/base" revision="8a91ececb60b4d179f76d00feea892b7bf9bdee7" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="2c519442cb6f0a004467169e8b8826b43b06df45" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="97459bde28b2f1aac96a52ac1c1ba38ce492bca0" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="ad115f1e1cfcf64f4448c5e847e5c345cd9e76ac" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
@@ -436,7 +436,7 @@
   <project groups="pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/minikin" path="frameworks/minikin" revision="84e0b50d7f71b1de3a09f20062738c85ff921567" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/ml" path="frameworks/ml" revision="14b194032b44185b0611184e170bd3e5ad5e0408" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/multidex" path="frameworks/multidex" revision="eaf0f1549a10eff385db31b44cba3e5bbe593795" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
-  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/native" path="frameworks/native" revision="b31fc1677cefb65bd31a9b6022c5b6f677b37c2b" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
+  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/native" path="frameworks/native" revision="cd57df760a2dd25c4f01ce6a6356b828358a7544" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="96e65a8d1811d353a133e1bcf98c095f2b7d43c2" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="036276b3e5a101baf691dcd896efa4a64fb23b41" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/car/services" path="frameworks/opt/car/services" revision="d7966cedc15bccd0c93026e7bae4a39f62bab3b1" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
@@ -446,10 +446,10 @@
   <project groups="pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="fff492513ae19fe7124f64213fbfc76daa0d78a8" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="frameworks_ims,pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="524c27f89bddae611e260fde0ce8fdecff7b23a9" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="603403003789eff74671038d9780441113a33ca7" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
-  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="ba22641b9f7ffbd7c6a8d57587c42652339f0c69" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
+  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="8f64d47934e8c1a916a0b71d59c04a819570fd13" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="d344270735148863fafd4b19d8dbc116b6cef287" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="7ce95d12d38560fec46b971faddde5de85e6a372" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
-  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="9b2e07c7bc4cb4a2aa57573637d5e272b70fbb80" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
+  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="afdc0b8c62c3100ca748c98b0950a367e78e4f00" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="1a90a473f5c4878d5cac636f47ccd02fb9fcbcd3" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/tv/tvsystem" path="frameworks/opt/tv/tvsystem" revision="56eb0890747ddfdcd289927e3528935076bbda7c" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="88fc82b04564aa3f64c73fa2f711c3e3d92f343c" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
@@ -511,7 +511,7 @@
   <project groups="pdk-fs,r-fs-release,qc-common-sys" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="a81f7fd5c55b5a1e39a02aa9531890689de0f89a" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="5811f9adc9a99b6b77fa14e6eb2900b992b9eab9" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk-fs,r-fs-release,qc-common-sys-intf" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="b0c983def47fe3ea3fe1770f019a7132b2e4b35c" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
-  <project groups="qc-common-sys-intf" name="platform/packages/apps/Mms" path="vendor/codeaurora/commonsys/packages/apps/Mms" revision="38f3f82ee51a507d8f598843f3b79d02a9439f12" upstream="refs/heads/android_ui-sys.lnx.5.0.r2-rel">
+  <project groups="qc-common-sys-intf" name="platform/packages/apps/Mms" path="vendor/codeaurora/commonsys/packages/apps/Mms" revision="436478edca3e9207e289006c80df9619ea072222" upstream="refs/heads/android_ui-sys.lnx.5.0.r2-rel">
     <linkfile dest="vendor/qcom/defs/product-defs/system/app_mms_product.mk" src="app_mms_system_product.mk"/>
   </project>
   <project groups="pdk-fs,r-fs-release,qc-common-sys" name="platform/packages/apps/Music" path="packages/apps/Music" revision="18bac938725f87f19c84a4411823e19637c33e8c" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
@@ -666,7 +666,7 @@
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/system/memory/libmeminfo" path="system/memory/libmeminfo" revision="ceac4705d122de4f7f718bca5d8e093476189acc" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/system/memory/libmemtrack" path="system/memory/libmemtrack" revision="6b5f796f2cdb061657ccb871f0a58d33ce15696b" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/system/memory/libmemunreachable" path="system/memory/libmemunreachable" revision="cd0930fa04aff99dfda651b13313502dc99fe166" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
-  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/system/memory/lmkd" path="system/memory/lmkd" revision="1db040c4405377f98092a064f62838c8bea3c50a" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
+  <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/system/memory/lmkd" path="system/memory/lmkd" revision="10b612c566c6776fcf3f7007ec4f73968ce32936" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/system/netd" path="system/netd" revision="6ed11d58205cf8c69f2ba4a0d8a7d284e844b649" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="platform/system/nfc" path="system/nfc" revision="fbf3b0106f8506b1753e2703c1abc5ca11718db0" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys" name="platform/system/nvram" path="system/nvram" revision="709145921a1c92e801ec29fe73ef5372d04da8a4" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
@@ -717,7 +717,7 @@
   <project groups="pdk,r-fs-release,tradefed,qc-common-sys-intf" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="5c83fb9b8b0661530e838aa76063a054062e3242" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,r-fs-release,tradefed,qc-common-sys" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="f8a971c364c69ccc46ef382dff38c0c93a9c265e" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="cts,pdk,pdk-cw-fs,pdk-fs,r-fs-release,tools,qc-common-sys-intf" name="platform/tools/trebuchet" path="tools/trebuchet" revision="21137a37a9ac11c42718a3521bd8d154f540a9fa" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
-  <project groups="qc-common-sys-intf" name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="af7afd76a2f8ea23f0afcec2a09f05c2c26d56c0" upstream="refs/heads/atel-sys.lnx.1.0.r4-rel"/>
+  <project groups="qc-common-sys-intf" name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="b2e062505d39d7ea20f16c10cf0d40a28e361770" upstream="refs/heads/atel-sys.lnx.1.0.r4-rel"/>
   <project groups="qc-common-sys-intf" name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" revision="53b5c8eb1905ccd7671990964b86ee246829846b" upstream="refs/heads/android_ui-sys.lnx.5.0.r2-rel">
     <linkfile dest="vendor/qcom/defs/product-defs/system/app_qtiSoundRecorder_product.mk" src="app_qtiSoundRecorder_system_product.mk"/>
   </project>
@@ -728,15 +728,15 @@
   <project groups="qc-common-sys-intf" name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" revision="2a434b152fc63e2dfa17a4006d49ac2042ff700e" upstream="refs/heads/nfc.sys.lnx.2.0.r3-rel">
     <linkfile dest="vendor/qcom/defs/product-defs/system/nfc-system-product.mk" src="nfc_system_product.mk"/>
   </project>
-  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" revision="8cf20f5e6451a15c961c658f20c2ecc7254d24e4" upstream="refs/heads/av-aosp-qc.lnx.11.0.r4-rel"/>
+  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" revision="2cb640d3ec145aab7303f2d3c81fe6d9b6930303" upstream="refs/heads/av-aosp-qc.lnx.11.0.r4-rel"/>
   <project groups="qc-common-sys" name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="54a4bcffd4b34990274890390effd1254117f323" upstream="refs/heads/bt.lnx.6.0.r4-rel"/>
-  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/bluetooth" revision="ed2b157e2404001d53d9a7a9a8c5b90cf6078868" upstream="refs/heads/btcommon.lnx.6.0.r3-rel">
+  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/bluetooth" revision="287556ad5a206a180d83254406fb45330bd7743f" upstream="refs/heads/btcommon.lnx.6.0.r3-rel">
     <linkfile dest="vendor/qcom/defs/board-defs/system/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/system/bt-system-opensource-product.mk" src="bt-system-opensource-product.mk"/>
   </project>
-  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" revision="5f3ae8379f8b1d3b3aaddb6079693f02171a1b1e" upstream="refs/heads/bt.lnx.6.0.r4-rel"/>
-  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="810aaacd1ae1689580c2fdc630486a68cd0c7b7c" upstream="refs/heads/android-core-sysintf.lnx.6.0.r3-rel">
+  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" revision="d28f821b05b71cff826bfb860674435dc734617b" upstream="refs/heads/bt.lnx.6.0.r4-rel"/>
+  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="6989255aeee8d4f800cf8b105a5bf63a1cd0b615" upstream="refs/heads/android-core-sysintf.lnx.6.0.r3-rel">
     <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk"/>
     <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
     <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk"/>
@@ -748,15 +748,15 @@
   </project>
   <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" revision="ef8a017e1fc0dbe64b6fc7b41c09521d78c29a96" upstream="refs/heads/qcom-qssi.lnx.6.0.r2-rel"/>
   <project groups="qc-common-sys" name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" revision="0cb1df40dc3aa65b5f19b904c91924dd1892e524" upstream="refs/heads/data-sys.lnx.6.0.r2-rel"/>
-  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" revision="a38ae892c1136d34729b6f38ef59383a0b2850fd" upstream="refs/heads/display-sysintf.lnx.1.2.r3-rel">
+  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" revision="33cc14dbe8cc1194c290b95961044c27a0249fbf" upstream="refs/heads/display-sysintf.lnx.1.2.r3-rel">
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
   </project>
   <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" revision="9ff587035fddde3d21724b61f9807f347d69e03a" upstream="refs/heads/data-sys.lnx.6.0.r2-rel"/>
   <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/fm-commonsys" path="vendor/qcom/opensource/commonsys/fm" revision="9c4a64d8bb2122899584c3ffd5b0eb55727bb99e" upstream="refs/heads/fm.lnx.6.0.r3-rel"/>
-  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="ab3541739b02edac4dd11e429a7dc1f288ccb400" upstream="refs/heads/android-vendor-hals.lnx.1.1.r53-rel"/>
-  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" revision="f4f7b1863767f06882caefdbfd7a5b23ca86aacd" upstream="refs/heads/bt.lnx.6.0.r4-rel"/>
-  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/system/bt" path="vendor/qcom/opensource/commonsys/system/bt" revision="46dbe2be74fc3e6bd073a1e6ea143d401143cfef" upstream="refs/heads/bt.lnx.6.0.r4-rel"/>
+  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="f8f753f94925a6b23a8eaa78730d69b57fa0fc8c" upstream="refs/heads/android-vendor-hals.lnx.1.1.r53-rel"/>
+  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" revision="522b3faa38ce12f551a6d89fface4890130ffb6a" upstream="refs/heads/bt.lnx.6.0.r4-rel"/>
+  <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/system/bt" path="vendor/qcom/opensource/commonsys/system/bt" revision="2791424da74236181a60cbbf6ce6e562c1c253f6" upstream="refs/heads/bt.lnx.6.0.r4-rel"/>
   <project groups="qc-common-sys-intf" name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/commonsys-intf/wfd" revision="223ba90986fb4ea588cb609f2fec8a93edb1ffe9" upstream="refs/heads/wfd-userspace-sysintf.lnx.5.0.r2-rel"/>
   <project groups="pdk,r-fs-release,qc-common-sys-intf" name="toolchain/pgo-profiles" revision="86a42a8fb2e188cc840cd4a34c123706caa44d6c" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
   <project groups="pdk,pdk-cw-fs,pdk-fs,r-fs-release,qc-common-sys-intf" name="tools/platform-compat" revision="795503b5673c6ee91ace7c19747fda77efa27a13" upstream="refs/heads/ks-aosp.lnx.3.0.r4-rel"/>
