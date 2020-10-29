@@ -42,6 +42,7 @@
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/apps/MusicFX" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/SnapdragonMusic" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
@@ -91,6 +92,7 @@
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ginkgo" />
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ginkgo" />
   <project path="external/chromium-webview" name="platform/external/chromium-webview" remote="aosp" />
+  <project path="external/exfat" name="relan/exfat" remote="github" revision="master" />
   <project path="external/google-fonts/barlow" name="platform/external/google-fonts/barlow" remote="aosp" />
   <project path="external/google-fonts/big-shoulders-text" name="platform/external/google-fonts/big-shoulders-text" remote="aosp" />
   <project path="external/google-fonts/fraunces" name="platform/external/google-fonts/fraunces" remote="aosp" />
@@ -114,6 +116,7 @@
     <linkfile dest="kernel/msm-4.14/Android.bp" src="Androidbp"/>
   </project>
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ginkgo" />
+  <project path="packages/apps/MusicFX" name="packages_apps_MusicFX" remote="ginkgo" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ginkgo" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ginkgo" />
   <project path="packages/apps/SnapdragonCamera" name="packages_apps_SnapdragonCamera" remote="ginkgo" />
