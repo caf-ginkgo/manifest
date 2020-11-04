@@ -13,7 +13,7 @@
   <remote name="aosp"
           fetch="https://android.googlesource.com"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-11.0.0_r8"/>
+          revision="refs/tags/android-11.0.0_r17"/>
 
   <remove-project name="device/qcom/common" />
   <remove-project name="device/qcom/qssi" />
@@ -51,6 +51,7 @@
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/memory/lmkd" />
   <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/vold" />
   <remove-project name="platform/vendor/codeaurora/packages/apps/Dialer" />
   <remove-project name="platform/vendor/nxp/opensource/halimpl" />
   <remove-project name="platform/vendor/nxp/opensource/packages/apps/Nfc" />
@@ -125,6 +126,7 @@
   <project path="system/core" name="system_core" remote="ginkgo" />
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="ginkgo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="ginkgo" />
+  <project path="system/vold" name="system_vold" remote="ginkgo" />
   <project path="vendor/codeaurora/commonsys/packages/apps/Dialer" name="vendor_codeaurora_commonsys_packages_apps_Dialer" remote="ginkgo" />
   <project path="vendor/codeaurora/commonsys/packages/apps/SnapdragonMusic" name="vendor_codeaurora_commonsys_packages_apps_SnapdragonMusic" remote="ginkgo" >
     <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapMusic_product.mk" src="app_snapMusic_system_product.mk"/>
