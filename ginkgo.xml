@@ -13,7 +13,7 @@
   <remote name="aosp"
           fetch="https://android.googlesource.com"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-11.0.0_r17"/>
+          revision="refs/tags/android-11.0.0_r15"/>
 
   <remove-project name="device/qcom/common" />
   <remove-project name="device/qcom/qssi" />
@@ -109,6 +109,7 @@
   <project path="frameworks/av" name="frameworks_av" remote="ginkgo" />
   <project path="frameworks/base" name="frameworks_base" remote="ginkgo" />
   <project path="frameworks/native" name="frameworks_native" remote="ginkgo" />
+  <project path="hardware/google/pixel-sepolicy" name="platform/hardware/google/pixel-sepolicy" remote="aosp" />
   <project path="hardware/qcom/display" name="hardware_qcom_display" remote="ginkgo" >
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
