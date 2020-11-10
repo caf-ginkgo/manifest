@@ -34,6 +34,7 @@
   <remove-project name="platform/external/google-fonts/source-sans-pro" />
   <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/scudo" />
+  <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/zlib" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
@@ -102,6 +103,7 @@
   <project path="external/libhevc" name="platform/external/libhevc" remote="aosp" />
   <project path="external/google-fonts/google-sans" name="external_google-fonts_google-sans" remote="ginkgo" />
   <project path="external/scudo" name="external_scudo" remote="ginkgo" />
+  <project path="external/sqlite" name="external_sqlite" remote="ginkgo" />
   <project path="external/zlib" name="external_zlib" remote="ginkgo" />
   <project path="frameworks/av" name="frameworks_av" remote="ginkgo" />
   <project path="frameworks/base" name="frameworks_base" remote="ginkgo" />
