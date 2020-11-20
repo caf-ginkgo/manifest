@@ -126,6 +126,7 @@
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ginkgo" />
   <project path="packages/apps/SnapdragonCamera" name="packages_apps_SnapdragonCamera" remote="ginkgo" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="ginkgo" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-18.0" />
   <project path="prebuilts/clang/host/linux-x86/clang-12.0" name="kdrag0n/proton-clang" remote="github" revision="master" />
   <project path="system/core" name="system_core" remote="ginkgo" />
   <project path="system/hardware/interfaces" name="system_hardware_interfaces" remote="ginkgo" />
